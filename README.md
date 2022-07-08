@@ -1,70 +1,187 @@
-# Getting Started with Create React Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-GraphQl
 
-## Available Scripts
+<div id="top"></div>
+<!-- PROJECT LOGO -->
+<div align="center">
+ 
 
-In the project directory, you can run:
+  <h1 align="center">React-GraphQL-API</h1>
 
-### `npm start`
+  <p align="center">
+    Booking web app
+    <br />
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- TABLE OF CONTENTS -->
+<details>
+<summary align="center">Table of Contents</summary>
 
-### `npm test`
+- [booking](#booking)
+  - 
+  - [Screenshots](#screenshots)
+  - [Description 🏗️](#description-️)
+  - [Live Demo](#live-demo)
+  - [Getting Started 🏁](#getting-started-)
+    - [Prerequisites and Dependencies 📜](#prerequisites-and-dependencies-)
+      - [Setting Up PostgreSQL](#setting-up-postgresql)
+    - [Clone this repository](#clone-this-repository)
+    - [Move into the cloned directory with](#move-into-the-cloned-directory-with)
+  - [Setup](#setup)
+    - [Run linter](#run-linter)
+      - [Auto-correct](#auto-correct)
+    - [Run Project](#run-project)
+  - [Run tests](#run-tests)
+    - [Roadmap](#roadmap)
+  - [Built With 🔨](#built-with-)
+  - [Authors ✍️](#authors-️)
+  - [🤝 Contributors](#-contributors)
+  - [📝 License](#-license)
+  - [Show your support 💪](#show-your-support-)
+  - [Acknowledgments](#acknowledgments)
+</details>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- About the project -->
+[App screenshot](https://example.com)
 
-### `npm run build`
+## Description 🏗️
+Rails app with graphql for collecting data from API.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Techologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###  React, GraphQL, Apollo, Ajax, Node.js, Webpacker
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-### `npm run eject`
+## Live Demo
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+(In progress)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started 🏁
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites and Dependencies 📜
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You will be needing:
 
-## Learn More
+- A terminal terminal
+- A code editor
+- React (follow the instructions based on your OS)
+  ```bash
+  https://reactjs.org/
+  ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Clone this repository
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/VuDej/react-graphql-project
+```
+### Move into the cloned directory with
 
-### Code Splitting
+  ```bash
+  cd react-graphql-project
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Setup
 
-### Analyzing the Bundle Size
+Install gems with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ```bash
+  npm install
+  ```
 
-### Making a Progressive Web App
+### Run linter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npx eslint .
+```
 
-### Advanced Configuration
+#### Auto-correct
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+```bash
+npx eslint . --fix
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Run Project
 
-### `npm run build` fails to minify
+Start server with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run dev:webpack on port 8080
+```
+<div align="center">OR</div>
+
+
+## Run tests
+
+ ```bash
+  npm run test
+```
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ROADMAP -->
+### Roadmap
+
+- [x] Set up the repository/repositories on GitHub and use Gitflow.
+- [x] Create controllers, endpoints and models
+ - [x] Use React & Redux to create frontend UI.
+- [x] Create unit tests
+- [x] Create README
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## Built With 🔨
+<div align="center">
+
+|| Languages ||
+|-|-------------|-|
+|| ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white) |     |
+
+</div>
+
+<div align="center">
+
+||Tools 🛠️||
+|-|-------------|-|
+||![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)   ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)  ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)||
+<p align="right">(<a href="#top">back to top</a>)</p>
+</div>
+
+## Authors ✍️
+<div align="center">
+
+| 👤 vudej  |
+|---|
+| <a target="_blank" href="https://github.com/VuDej"><img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="Github profile"></a>  <a target="_blank" href="https://www.linkedin.com/in/dejan-vujovic/"><img src="https://img.shields.io/badge/-LinkedIn-0077b5?style=for-the-badge&logo=LinkedIn&logoColor=white" alt="Linkedin profile"></a> <a target="_blank" href="https://twitter.com/DejanVuj"><img src="https://img.shields.io/badge/-Twitter-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter profile"></a>
+|
+
+</div>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+## 🤝 Contributors
+
+Contributions, issues, and feature requests are greatly appreciated!
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "improvements".
+
+- Fork the Project
+- Create your Feature Branch (git checkout -b feature/yourfeaturename)
+- Commit your Changes (git commit -m 'Add suggested feature')
+- Push to the Branch (git push origin feature/AmazingFeature)
+- Open a Pull Request
+
+Feel free to check the [issues page](https://github.com/VuDej/react-graphql-project/issues).
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+## 📝 License
+
+This project is licensed by [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+## Show your support 💪
+Give a ⭐️ if you like this project!
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
