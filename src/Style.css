@@ -1,0 +1,14 @@
+.logo {
+	width: 500px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.launch-loader {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
