@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# GraphQL React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description :clipboard:
+> A demo app for using GraphQl, Appollo Client with React and SpaceX API
 
-## Available Scripts
+## GraphQL App DEMO :video_camera:
+![](GraphQl-SpaceX-Demo.gif)
 
-In the project directory, you can run:
+## Details :scroll:
 
-### `npm start`
+1. :arrow_right: We have set up our backend server in node and express app ( `localhost:5000/graphql` ) in `server.js`.
+2. :arrow_right: React application is set up using webpack and babel ( that runs webpack-dev-server for the frontend on `localhost:8080` )
+3. :arrow_right: The schema and graphQl queries are created in `schema.js`
+4. :arrow_right: We have used axios to fetch data using SpaceX API, in the created queries. ( e.g. API URL: `https://api.spacexdata.com/v3/launches` )
+5. :arrow_right: GraphiQL playground is available on `localhost:5000/graphql`. Check demo.
+6. :arrow_right: We have used Appolo Client to build UI in React that fetches data from GraphQL
+7. :arrow_right: React components are created and wrapped them inside `<AppoloProvider>` and appolo `client` is then passed to these components.
+8. :arrow_right: Reach router is used to create routes for home and individual pages.
+9. :arrow_right: The `graphql-tag` ( graphQl query parsing utility ) is installed and `gpl` is imported from it. The `gpl` parses GraphQL query strings into the standard GraphQL AST.
+10. :arrow_right: Use `gpl` to query the data in front react app, from the schema we have create in our node application in backend.
+11. :arrow_right: We have displayed all the data received as response of the query on home page( `Launches.js` ).
+12. :arrow_right: When user request for a particular launch item, we query that item by its id and display it on an individual page `Launch.js` 
+( e.g. We redirect the user on url `http://localhost:8080/launch/1`, when he request for launch item with id=1 )
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## GraphiQL Playground :black_square_button:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![](graphiql.png)
 
-### `npm test`
+## GraphiQL Playground DEMO :video_camera:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](GraphiQL-demo.gif)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installation :wrench:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone this repo by running `git clone https://github.com/imranhsayed/graphql-react-app`
+2. `npm install`
+3. `npm run server`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Useful Links :link:
 
-### `npm run eject`
+1. [Express GraphQL github link](https://github.com/graphql/express-graphql)
+2. [SpaceX-API](https://github.com/r-spacex/SpaceX-API)
+3. [SpaceX-Docs](https://docs.spacexdata.com/)
+4. [Apollo GraphQL](https://www.apollographql.com/docs/react/) 
+Appollo Client is way to use GraphQL to build client applications. It helps you build a UI that fetches data with GraphQL, and can be used with any JavaScript front-end.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Instructions :point_right:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Graphiql is a tool that we can use as a client to make request to our server.
+* Graph Ql will be avialable at `localhost:5000/graphql`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Common Commands :computer:
 
-## Learn More
+1. `npm run dev:webpack` runs webpack-dev-server for frontend on port 8080 in watch mode 
+2. `npm run server` runs node server for backend on `localhost:5000/graphql`
+3. `npm run dev` would run both front end and backend servers on their respective ports, using concurrently
+4. `start` Runs the server at `localhost:5000/graphql` in non watch mode
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Built With :zap:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Node
+2. Express
+3. React
+4. GraphQL
+5. Appollo Client
+6. Webpack
+7. Babel
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **[MIT license](http://opensource.org/licenses/mit-license.php)**
