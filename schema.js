@@ -9,7 +9,6 @@ const {
 	GraphQLSchema
 } = require( 'graphql' );
 
-// RocketType
 const RocketType = new GraphQLObjectType({
 	name: 'Rocket',
 	fields: () => ({
@@ -19,7 +18,6 @@ const RocketType = new GraphQLObjectType({
 	})
 });
 
-// Launch type
 const LaunchType = new GraphQLObjectType({
 	name: 'Launch',
 	fields: () => ({
@@ -32,11 +30,10 @@ const LaunchType = new GraphQLObjectType({
 	})
 });
 
-// Root Query
 const RootQuery = new GraphQLObjectType({
 	name: 'RootQueryType',
 	fields: {
-		// All Launches data
+		
 		launches: {
 			type: new GraphQLList( LaunchType ),
 			resolve( parent, args ){
@@ -44,7 +41,7 @@ const RootQuery = new GraphQLObjectType({
 					.then( res => res.data );
 			}
 		},
-		// Single Launch data with id
+		
 		launch: {
 			type: LaunchType,
 			args: {
@@ -55,7 +52,7 @@ const RootQuery = new GraphQLObjectType({
 					.then( res => res.data );
 			}
 		},
-		// All Rockets data
+		
 		rockets: {
 			type: new GraphQLList( RocketType ),
 			resolve( parent, args ){
@@ -63,7 +60,7 @@ const RootQuery = new GraphQLObjectType({
 					.then( res => res.data );
 			}
 		},
-		// Single Rocket data with id
+		
 		rocket: {
 			type: RocketType,
 			args: {
