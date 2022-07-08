@@ -69,11 +69,6 @@ You will be needing:
   https://reactjs.org/
   ```
 
-
-
-
-
-
 ### Clone this repository
 
 ```bash
